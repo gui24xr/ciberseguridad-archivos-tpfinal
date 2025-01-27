@@ -1,0 +1,35 @@
+https://app.any.run/tasks/522ca218-43a8-40a4-9750-70e9f3b5589e
+
+https://app.any.run/tasks/0be942c8-2412-4bb7-99de-4cecdbd1378f
+
+https://any.run/report/f7002d71cf0c76ff7d0bbc88d23ccb8bf2e36535de57a68b234d99636b44c993/7a74bcfc-5d27-4d0f-a62a-53d47f70ed6c
+
+
+
+1- agarrar las 5 acciones del soporte tecnico y con ellas decimos esta accion estuvo bien o mal y justificamos la razon
+ acciones:
+  guardar una muestra del malware
+  apagar los equipos
+
+2- se analiza la muestra y muestro los procedimientos que llevariamos acabo
+
+3- hipotesis de ingreso y de acuerdo a eso diseñar lo que se propone para la empresa en base al caso
+
+
+un analisis tecnico
+un analisis ejecutivo (no tan tecnico)
+
+diseño de solucion: para este malware lo correcto es tal cosa:
+hacer una revision de perimetro y dar propuesta de 3 mejoras de perimetro
+implementar uno o varios programas de
+conscientizacion
+actualizacion
+revision ejemplo que habria que hacer otro programa de backup xq solo guarda el 10 x ciento
+
+como ejecutariamos estos programas propuestos
+
+
+
+
+//------------------
+te cuento mas o menos lo que veo en la diaspotiva de anyrun cuando lo ejcutan.... aparce la imagen esta redteam, el usuario la abre y es una imagen normal, al cerrarla pasan unos instantes y aparecen 2 archivos mas  decryptor.exe en formato rar y vindows.exe, tal parece se aprovecho alguna vulnerabilidad en el programa que muestra la imagen  y se inserto codigo maliciso para descargar esos nuevos archivos que aparecieron en escritorio. El usuario muy curioso descomprime decryptor.exe y revisa su contenido sin ejecutar nada, luego revisa las propiedades de la imagen nuevamene, la abrela imagen sigue igual. Paso seguido procede a compartir a travez de skype un el archivo vindows.exe, se abre skype y aparece una videollamada con unapersona. Aparece una notificacion de vindows has stopping y dice que windows cerrara el proceso. Luego de esto se puede apreciar como se modifica un archivo en escritorio y pasa a tener la extension .vindows . No conforme con esto, el user ingresa a la carpeta que descomprimio antes y ejecuta decriptor.exe como administrador que escanea todos los archivos  y por consola dice que no existen archivos encriptados. Sigue revisando archivos y ve archivos png no validos. Tal parece que la curiosidad lo pudo.

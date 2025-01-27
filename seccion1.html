@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe de Análisis - LexCorp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .diapositiva {
+            padding: 20px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .observaciones {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #3498db;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Diapositiva 1: Situación de Análisis -->
+    <div class="diapositiva">
+        <h1>Situación de Análisis</h1>
+        <ul>
+            <li><strong>Fecha del incidente:</strong> Noche del 20 al 23 de junio de 2021.</li>
+            <li><strong>Empresa afectada:</strong> LexCorp.</li>
+            <li><strong>Tipo de incidente:</strong> Ataque de malware.</li>
+            <li><strong>Infraestructura afectada:</strong>
+                <ul>
+                    <li>Servidores: Windows Server 2003/2012.</li>
+                    <li>Equipos de usuario: Windows 7/Windows 10.</li>
+                </ul>
+            </li>
+            <li><strong>Contexto:</strong> El malware comprometió la infraestructura de red de LexCorp, afectando servidores y equipos de usuario. El área de soporte técnico tomó medidas inmediatas para contener el incidente.</li>
+        </ul>
+    </div>
+
+    <!-- Diapositiva 2: Acción 1 - Guardado de Muestra del Malware -->
+    <div class="diapositiva">
+        <h2>Acción 1 - Guardado de Muestra del Malware</h2>
+        <p><strong>Acción:</strong> Guardaron una muestra del malware.</p>
+        <div class="observaciones">
+            <p><strong>¿Fue adecuada?</strong> Sí.</p>
+            <p><strong>Importancia:</strong> Guardar una muestra del malware es crucial para su análisis forense. Permite identificar el tipo de malware, su comportamiento, origen y vector de ataque.</p>
+            <p><strong>Impacto:</strong> Esta acción fue fundamental para que el analista de ciberseguridad pudiera emitir recomendaciones precisas y entender el alcance del ataque.</p>
+        </div>
+    </div>
+
+    <!-- Diapositiva 3: Acción 2 - Apagado de Máquinas Afectadas -->
+    <div class="diapositiva">
+        <h2>Acción 2 - Apagado de Máquinas Afectadas</h2>
+        <p><strong>Acción:</strong> Apagaron, el mismo día 23 de septiembre, las máquinas que se habían identificado como afectadas durante el incidente.</p>
+        <div class="observaciones">
+            <p><strong>¿Fue adecuada?</strong> Sí, pero con matices.</p>
+            <p><strong>Importancia:</strong> Apagar las máquinas infectadas es una medida de contención inmediata para evitar la propagación del malware.</p>
+            <p><strong>Impacto:</strong> Esta acción limitó el daño, pero también detuvo operaciones críticas, lo que pudo afectar la productividad de la empresa.</p>
+            <p><strong>Recomendación:</strong> En futuros incidentes, se podría considerar el aislamiento de las máquinas en lugar de apagarlas, para mantener cierta operatividad mientras se contiene la amenaza.</p>
+        </div>
+    </div>
+
+    <!-- Diapositiva 4: Acción 3 - Restauración de Copias de Seguridad -->
+    <div class="diapositiva">
+        <h2>Acción 3 - Restauración de Copias de Seguridad</h2>
+        <p><strong>Acción:</strong> En las máquinas que disponían de copia de seguridad (back-up), restauraron al estado correspondiente al día 19 de septiembre (fecha de último backup disponible previo al ataque). Solo un 10% del Parque contaba con backup.</p>
+        <div class="observaciones">
+            <p><strong>¿Fue adecuada?</strong> Sí, pero con limitaciones.</p>
+            <p><strong>Importancia:</strong> La restauración de backups es una práctica esencial para recuperar datos y sistemas después de un ataque.</p>
+            <p><strong>Impacto:</strong> Solo el 10% de los equipos contaban con backup, lo que significa que el 90% de la infraestructura quedó vulnerable y sin posibilidad de recuperación inmediata.</p>
+            <p><strong>Recomendación:</strong> LexCorp debe implementar una política de backups más robusta, con copias de seguridad regulares y cobertura completa de la infraestructura.</p>
+        </div>
+    </div>
+
+    <!-- Diapositiva 5: Acción 4 - Contratación de Analista de Ciberseguridad -->
+    <div class="diapositiva">
+        <h2>Acción 4 - Contratación de Analista de Ciberseguridad</h2>
+        <p><strong>Acción:</strong> El 24 de septiembre, LexCorp solicita los servicios de un analista de ciberseguridad para analizar una muestra y emitir recomendaciones para su infraestructura de red y mejorar su postura de ciberseguridad.</p>
+        <div class="observaciones">
+            <p><strong>¿Fue adecuada?</strong> Sí.</p>
+            <p><strong>Importancia:</strong> La contratación de un experto en ciberseguridad es fundamental para analizar el incidente, identificar vulnerabilidades y proponer soluciones.</p>
+            <p><strong>Impacto:</strong> Esta acción permitirá a LexCorp entender el ataque, mejorar sus defensas y prevenir futuros incidentes.</p>
+            <p><strong>Recomendación:</strong> Es recomendable que LexCorp establezca una relación continua con expertos en ciberseguridad para mantener una postura proactiva.</p>
+        </div>
+    </div>
+
+    <!-- Diapositiva 6: Acción 5 - Elaboración del Informe de Análisis -->
+    <div class="diapositiva">
+        <h2>Acción 5 - Elaboración del Informe de Análisis</h2>
+        <p><strong>Acción:</strong> LexCorp solicita la elaboración de un informe de análisis del ataque, que tipo de malware es y el vector de ataque para aportar más detalles sobre el incidente y el nivel de compromiso derivado del mismo.</p>
+        <div class="observaciones">
+            <p><strong>¿Fue adecuada?</strong> Sí.</p>
+            <p><strong>Importancia:</strong> Un informe detallado es esencial para documentar el incidente, entender cómo ocurrió y tomar medidas correctivas.</p>
+            <p><strong>Impacto:</strong> El informe permitirá a LexCorp aprender de este incidente, fortalecer su infraestructura y cumplir con posibles requisitos legales o regulatorios.</p>
+            <p><strong>Recomendación:</strong> El informe debe incluir no solo el análisis técnico, sino también un plan de acción para mejorar la ciberseguridad de la empresa.</p>
+        </div>
+    </div>
+
+</body>
+</html>

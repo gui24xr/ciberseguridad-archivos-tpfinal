@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe Técnico - Análisis Estático</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .diapositiva {
+            padding: 20px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .observaciones {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #3498db;
+        }
+        code {
+            background-color: #eaeaea;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Diapositiva 1: Introducción -->
+    <div class="diapositiva">
+        <h1>Introducción</h1>
+        <p>El análisis estático de la muestra de malware se realizó con el objetivo de identificar sus características y obtener información relevante sin ejecutar el archivo. Este tipo de análisis es fundamental para entender la naturaleza del malware y enriquecer el informe con datos adicionales obtenidos de plataformas especializadas.</p>
+    </div>
+
+    <!-- Diapositiva 2: Metodología -->
+    <div class="diapositiva">
+        <h2>Metodología</h2>
+        <p>El análisis estático se llevó a cabo utilizando herramientas disponibles en <strong>Kali Linux</strong>, una distribución especializada en ciberseguridad. Los pasos principales fueron:</p>
+        <ul>
+            <li><strong>Cálculo de Hashes:</strong> Se calcularon los hashes MD5, SHA1 y SHA256 del archivo.</li>
+            <li><strong>Contraste con Bases de Datos:</strong> Los hashes obtenidos se compararon con plataformas como Any.Run, VirusTotal y Hybrid Analysis.</li>
+            <li><strong>Extracción de Metadatos:</strong> Se analizaron los metadatos del archivo para obtener información adicional.</li>
+        </ul>
+    </div>
+
+    <!-- Diapositiva 3: Herramientas Utilizadas -->
+    <div class="diapositiva">
+        <h2>Herramientas Utilizadas en Kali Linux</h2>
+        <p>Para el análisis estático, se utilizaron las siguientes herramientas en Kali Linux:</p>
+        <ul>
+            <li><strong>Cálculo de Hashes:</strong>
+                <ul>
+                    <li><code>md5sum</code>: Calcula el hash MD5 del archivo.</li>
+                    <li><code>sha1sum</code>: Calcula el hash SHA1 del archivo.</li>
+                    <li><code>sha256sum</code>: Calcula el hash SHA256 del archivo.</li>
+                    <li><code>ssdeep</code>: Calcula el hash SSDEEP.</li>
+                </ul>
+            </li>
+            <li><strong>Extracción de Metadatos:</strong>
+                <ul>
+                    <li><code>file</code>: Identifica el tipo de archivo.</li>
+                    <li><code>exiftool</code>: Extrae metadatos detallados.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Diapositiva 4: Resultados del Análisis Estático -->
+    <div class="diapositiva">
+        <h2>Resultados del Análisis Estático</h2>
+        <h3>Hashes Calculados</h3>
+        <ul>
+            <li><strong>MD5:</strong> <code>6B14BE18B519C06E9510F0104B825F0A</code></li>
+            <li><strong>SHA1:</strong> <code>AC60967EEF5EC26F7505E65154C19E47ED4B196C</code></li>
+            <li><strong>SHA256:</strong> <code>F7002D71CF0C76FF7D0BBC88D23CCB8BF2E36535DE57A68B234D99636B44C993</code></li>
+            <li><strong>SSDEEP:</strong> <code>12288:2xc2x9NIO0aU5zVWpFdeXQpblFNkzmSh6BUov:2xc2x9NIO0aU5zVQMXmlXkz7haUq</code></li>
+        </ul>
+
+        <h3>Contraste con Plataformas de Análisis</h3>
+        <p>Los hashes obtenidos se contrastaron con las siguientes plataformas:</p>
+        <ul>
+            <li><strong>Any.Run:</strong> <a href="https://app.any.run/tasks/7a74bcfc-5d27-4d0f-a62a-53d47f70ed6c" target="_blank">Ver análisis completo</a>.</li>
+            <li><strong>VirusTotal:</strong> Se buscaron coincidencias con muestras conocidas.</li>
+            <li><strong>Hybrid Analysis:</strong> Se contrastó la muestra para obtener información adicional.</li>
+        </ul>
+
+        <h3>Metadatos del Archivo</h3>
+        <ul>
+            <li><strong>Nombre del archivo:</strong> <code>redteam-05.png</code></li>
+            <li><strong>Tipo MIME:</strong> <code>image/png</code></li>
+            <li><strong>Descripción del archivo:</strong> <code>PNG image data, 3751 x 1526, 8-bit/color RGBA, non-interlaced</code></li>
+        </ul>
+    </div>
+
+    <!-- Diapositiva 5: Conclusiones -->
+    <div class="diapositiva">
+        <h2>Conclusiones</h2>
+        <p>El análisis estático de la muestra <code>redteam-05.png</code> permitió obtener sus hashes únicos (MD5, SHA1, SHA256 y SSDEEP) y extraer metadatos relevantes. Estos datos se utilizaron para contrastar la muestra con plataformas como Any.Run, VirusTotal y Hybrid Analysis, lo que enriqueció el análisis al proporcionar información adicional sobre el comportamiento del malware.</p>
+        <p>Según los resultados obtenidos, la muestra presenta características de <strong>ransomware</strong> y <strong>stealer</strong>, utilizando técnicas como la exfiltración de datos a través de <code>Pastebin</code> y la posible realización de ataques DDoS.</p>
+    </div>
+
+    <!-- Diapositiva 6: Anexos -->
+    <div class="diapositiva">
+        <h2>Anexos</h2>
+        <ul>
+            <li><strong>Enlace al análisis completo en Any.Run:</strong> <a href="https://app.any.run/tasks/7a74bcfc-5d27-4d0f-a62a-53d47f70ed6c" target="_blank">Análisis en Any.Run</a></li>
+            <li><strong>Capturas de pantalla:</strong> Incluir capturas de las herramientas utilizadas en Kali Linux y los resultados obtenidos.</li>
+        </ul>
+    </div>
+
+</body>
+</html>
