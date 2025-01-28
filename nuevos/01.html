@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe de Análisis - LexCorp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .diapositiva {
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            width: 98%;  /* Menos margen en los lados */
+            height: 98%;  /* Menos margen en vertical */
+            max-width: 100%;  /* Maximiza el ancho */
+            max-height: 100%;  /* Maximiza el alto */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centra el contenido verticalmente */
+            align-items: center; /* Centra el contenido horizontalmente */
+            text-align: center;
+            line-height: 1.8;
+            margin: 0 1%;  /* Poca separación en los bordes */
+            overflow: auto;  /* Para que el contenido no se desborde */
+            position: relative;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 3em;  /* Aumenté el tamaño */
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            text-align: left;
+            display: inline-block;
+            max-width: 800px;
+            font-size: 1.3em;  /* Aumenté el tamaño del texto de las listas */
+        }
+        .infraestructura {
+            font-size: 1.2em;  /* Ajusté el tamaño del texto de infraestructura */
+        }
+        .observaciones {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            font-size: 1.2em;  /* Aumenté el tamaño del texto de observaciones */
+        }
+        /* Línea vertical a lo largo de toda la diapositiva */
+        .diapositiva::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 6px; /* Línea más ancha */
+            height: 100%;
+            background-color: #2980b9; /* Azul más oscuro */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Diapositiva 1: Situación de Análisis -->
+    <div class="diapositiva">
+        <h1>Situación de Análisis</h1>
+        <ul>
+            <li><strong>Fecha del incidente:</strong> Noche del 20 al 23 de junio de 2021.</li>
+            <li><strong>Empresa afectada:</strong> LexCorp.</li>
+            <li><strong>Tipo de incidente:</strong> Ataque de malware.</li>
+            <li><strong>Infraestructura afectada:</strong>
+                <ul class="infraestructura">
+                    <li>Servidores: Windows Server 2003/2012.</li>
+                    <li>Equipos de usuario: Windows 7/Windows 10.</li>
+                </ul>
+            </li>
+            <li><strong>Contexto:</strong> El malware comprometió la infraestructura de red de LexCorp, afectando servidores y equipos de usuario. El área de soporte técnico tomó medidas inmediatas para contener el incidente.</li>
+        </ul>
+      </div>
+      
+
+</body>
+</html>
