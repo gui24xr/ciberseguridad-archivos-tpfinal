@@ -1,0 +1,57 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: "Template Guillermo Guardia"
+
+Resources:
+  
+  # S3 Bucket
+  MyS3Bucket:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      BucketName: 'bucket-cloudformation'
+  
+  # VPC
+  MyVPC:
+    Type: 'AWS::EC2::VPC'
+    Properties:
+      CidrBlock: '10.0.0.0/16'
+      EnableDnsSupport: 'true'
+      EnableDnsHostnames: 'true'
+      Tags:
+        - Key: 'Name'
+          Value: 'MiVPC'
+  
+  # IAM Role
+  MyIAMRole:
+    Type: 'AWS::IAM::Role'
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: 'Allow'
+            Principal:
+              Service: 'ec2.amazonaws.com'
+            Action: 'sts:AssumeRole'
+      Path: '/'
+      Policies:
+        - PolicyName: 'MyEC2Policy'
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: 'Allow'
+                Action:
+                  - 's3:ListBucket'
+                  - 's3:GetObject'
+                Resource: 
+                  - !Sub 'arn:aws:s3:::${MyS3Bucket}'
+                  - !Sub 'arn:aws:s3:::${MyS3Bucket}/*'
+
+Outputs:
+  VPCId:
+    Description: "ID de la VPC"
+    Value: !Ref MyVPC
+  S3BucketName:
+    Description: "Nombre del S3 Bucket"
+    Value: !Ref MyS3Bucket
+  IAMRoleName:
+    Description: "Nombre del IAM Role"
+    Value: !Ref MyIAMRole
