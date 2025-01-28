@@ -1,0 +1,107 @@
+Diseño de Solución para el Incidente de Malware en LexCorp
+La implementación de las siguientes medidas fortalecerá la seguridad del perímetro, reducirá el riesgo de infecciones por malware, mejorará la concienciación de los usuarios y garantizará la recuperación efectiva de datos en caso de incidentes futuros. Estas acciones son esenciales para crear un entorno más seguro y resiliente en LexCorp.
+
+1. Revisión de Perímetro y Mejoras Propuestas
+Objetivo: Fortalecer el perímetro de seguridad para evitar la explotación de vulnerabilidades.
+
+Implementar un firewall de próxima generación (NGFW):
+
+Cómo llevarlo a cabo: Adquirir e instalar un NGFW en la red de LexCorp. Configurar reglas de filtrado para bloquear tráfico malicioso y conexiones no autorizadas.
+
+Beneficio: Previene la descarga de archivos maliciosos y bloquea intentos de intrusión.
+
+Configurar un sistema de detección y prevención de intrusiones (IDS/IPS):
+
+Cómo llevarlo a cabo: Implementar un IDS/IPS en la red para monitorear el tráfico en tiempo real. Configurar alertas y respuestas automáticas para actividades sospechosas.
+
+Beneficio: Detecta y bloquea ataques antes de que comprometan la infraestructura.
+
+Segmentar la red:
+
+Cómo llevarlo a cabo: Dividir la red en subredes lógicas (por departamentos, funciones o niveles de seguridad). Utilizar VLANs y firewalls internos para aislar segmentos.
+
+Beneficio: Limita la propagación del malware y reduce el impacto de un ataque.
+
+2. Programas de Concientización
+Objetivo: Reducir el riesgo asociado con la interacción de los usuarios con archivos sospechosos.
+
+Capacitación en ciberseguridad:
+
+Cómo llevarlo a cabo: Organizar talleres y sesiones de formación para enseñar a los usuarios a identificar correos sospechosos, archivos maliciosos y prácticas seguras en línea.
+
+Beneficio: Los usuarios estarán mejor preparados para evitar caer en engaños.
+
+Simulaciones de phishing:
+
+Cómo llevarlo a cabo: Realizar campañas de phishing simuladas para evaluar la capacidad de los usuarios. Proporcionar retroalimentación y capacitación adicional a quienes caigan en la simulación.
+
+Beneficio: Mejora la capacidad de los usuarios para detectar intentos de phishing.
+
+Políticas claras de uso:
+
+Cómo llevarlo a cabo: Establecer y comunicar políticas sobre el manejo de archivos desconocidos y el uso de aplicaciones no autorizadas. Implementar controles técnicos para hacer cumplir estas políticas.
+
+Beneficio: Reduce el riesgo de que los usuarios ejecuten archivos maliciosos por error.
+
+3. Actualización de Software y Sistemas
+Objetivo: Evitar la explotación de vulnerabilidades en software obsoleto.
+
+Implementar un programa de gestión de parches:
+
+Cómo llevarlo a cabo: Utilizar herramientas de gestión de parches para identificar y aplicar actualizaciones de seguridad en todos los sistemas y aplicaciones.
+
+Beneficio: Reduce el riesgo de que los atacantes exploten vulnerabilidades conocidas.
+
+Automatizar actualizaciones:
+
+Cómo llevarlo a cabo: Configurar actualizaciones automáticas en todos los sistemas críticos. Establecer ventanas de mantenimiento para minimizar el impacto en las operaciones.
+
+Beneficio: Garantiza que los sistemas estén siempre protegidos contra las últimas amenazas.
+
+Revisar software obsoleto:
+
+Cómo llevarlo a cabo: Identificar y reemplazar software que ya no recibe soporte del fabricante. Migrar a versiones más recientes o alternativas seguras.
+
+Beneficio: Elimina puntos débiles en la infraestructura.
+
+4. Mejora del Programa de Backup
+Objetivo: Garantizar la recuperación efectiva de datos en caso de incidentes.
+
+Ampliar la cobertura de backups:
+
+Cómo llevarlo a cabo: Implementar un sistema de backup que cubra el 100% de los equipos y servidores críticos. Utilizar herramientas de backup centralizadas.
+
+Beneficio: Asegura que todos los datos importantes estén respaldados.
+
+Realizar backups frecuentes:
+
+Cómo llevarlo a cabo: Configurar backups diarios o en tiempo real. Utilizar soluciones de backup incremental para minimizar el tiempo de ejecución.
+
+Beneficio: Reduce la pérdida de datos en caso de un ataque.
+
+Almacenar backups fuera de la red:
+
+Cómo llevarlo a cabo: Utilizar servicios de backup en la nube o almacenamiento externo para guardar copias de seguridad. Asegurar que los backups estén encriptados.
+
+Beneficio: Protege los backups en caso de ransomware o desastres.
+
+5. Medidas de Contención y Respuesta
+Objetivo: Mejorar la capacidad de respuesta ante incidentes.
+
+Aislamiento en lugar de apagado:
+
+Cómo llevarlo a cabo: Configurar políticas de aislamiento automático para máquinas infectadas. Utilizar herramientas de gestión de red para aislar segmentos afectados.
+
+Beneficio: Mantiene la operatividad mientras se contiene la amenaza.
+
+Análisis forense continuo:
+
+Cómo llevarlo a cabo: Establecer una relación con expertos en ciberseguridad para realizar análisis forenses periódicos. Utilizar herramientas de análisis de malware.
+
+Beneficio: Permite entender mejor los ataques y mejorar las defensas.
+
+Elaboración de informes detallados:
+
+Cómo llevarlo a cabo: Documentar cada incidente, incluyendo el tipo de malware, el vector de ataque y las acciones tomadas. Incluir un plan de acción para mejorar la ciberseguridad.
+
+Beneficio: Facilita el aprendizaje y la mejora continua.

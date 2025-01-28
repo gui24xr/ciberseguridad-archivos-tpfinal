@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hipótesis de Infección por Malware</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .diapositiva {
+            padding: 20px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .observaciones {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #3498db;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Diapositiva 1: Hipótesis de Infección por Malware -->
+    <div class="diapositiva">
+        <h1>Hipótesis de Infección por Malware</h1>
+        <p>El análisis realizado sugiere que el sistema fue comprometido a través de una imagen aparentemente inocua, la cual contenía código malicioso incrustado. A continuación, se detalla la hipótesis:</p>
+        <ul>
+            <li><strong>Origen del ataque:</strong> El usuario abrió una imagen asociada con el nombre "redteam". Inicialmente, la imagen se mostró de manera normal, pero al cerrarla, se descargaron automáticamente dos archivos maliciosos: `decryptor.exe` y `vindows.exe`.</li>
+            <li><strong>Vulnerabilidad explotada:</strong> Es probable que el atacante haya aprovechado una falla en el software de visualización de imágenes (como un desbordamiento de búfer o un error en la interpretación de metadatos) para inyectar y ejecutar código malicioso.</li>
+            <li><strong>Comportamiento del malware:</strong> 
+                <ul>
+                    <li>El usuario descomprimió `decryptor.exe` y revisó su contenido sin ejecutarlo, pero compartió `vindows.exe` a través de Skype.</li>
+                    <li>Skype inició una videollamada automáticamente, lo que sugiere capacidades de control remoto o suplantación.</li>
+                    <li>Apareció un mensaje de error "vindows has stopped", seguido de la modificación de un archivo en el escritorio, que cambió su extensión a `.vindows`.</li>
+                    <li>El usuario ejecutó `decryptor.exe` como administrador, lo que otorgó privilegios elevados al malware. Aunque la herramienta indicó que no había archivos encriptados, se observaron archivos PNG no válidos, lo que sugiere actividad maliciosa adicional.</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="observaciones">
+            <p><strong>En conclusión:</strong> La infección parece haberse originado debido a la explotación de una vulnerabilidad en el software de visualización de imágenes, combinada con la curiosidad del usuario al interactuar con archivos sospechosos. El malware demostró capacidades para descargar archivos adicionales, modificar archivos existentes y posiblemente propagarse a través de Skype. Este caso resalta la importancia de mantener el software actualizado, evitar la ejecución de archivos desconocidos y ser cauteloso al interactuar con contenido sospechoso.</p>
+        </div>
+    </div>
+
+</body>
+</html>
